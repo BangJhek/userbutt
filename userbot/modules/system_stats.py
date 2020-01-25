@@ -129,8 +129,8 @@ async def amireallyalive(alive):
                   f"~ Python ver  : {python_version()} \n"
                      " ---------------------------------------- \n"
                   f"User : {DEFAULTUSER}  \n"
-                     " ---------------------------------------- \n\n"
-		     "[Support Group](https://t.me/userbotindo) \n"
+                     " ---------------------------------------- \n"
+		     "[Support Group](https://t.me/userbotindo) \n\n"
                      "감사합니다 💝 \n"
                      "Have a nice day \n")
 
