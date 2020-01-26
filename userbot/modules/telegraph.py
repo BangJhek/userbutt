@@ -72,7 +72,7 @@ async def telegraphs(graph):
                 ms = (end - start).seconds
                 await graph.edit("Successfully uploaded to [telegra.ph](https://telegra.ph/{}).".format(response["path"], ms), link_preview=True)
         else:
-            await graph.edit("Reply to a message to get a permanent telegra.ph link.")
+            await graph.edit("`Reply to a message to get a permanent telegra.ph link.`")
 
 
 def resize_image(image):
