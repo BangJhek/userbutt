@@ -125,12 +125,12 @@ async def amireallyalive(alive):
     await alive.edit(" 안녕하세요 😘\n\n"
                      " ---------------------------------------- \n"
                      " I'm running \n"    
-                  f"~ Telethon ver : {version.__version__} \n"
-                  f"~ Python ver  : {python_version()} \n"
+                  f"~ Telethon : v{version.__version__} \n"
+                  f"~ Python  : v{python_version()} \n"
                      " ---------------------------------------- \n"
                   f"User : {DEFAULTUSER}  \n"
                      " ---------------------------------------- \n\n"
-		     "[Support Group](https://t.me/userbotindo) \n"
+		           "[Support Group](https://t.me/userbotindo) \n"
                      "감사합니다 💝 \n"
                      "Have a nice day \n")
 
