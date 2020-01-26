@@ -101,13 +101,13 @@ async def ANTI_SPAMBOT(welcm):
                         spambot = False
                     elif "t.me/joinchat" in message.text:
                         reason = "Potential Promotion Message"
-                        spambot = False
+                        spambot = True
                     elif message.fwd_from:
                         reason = "Forwarded Message"
-                        spambot = False
+                        spambot = True
                     elif "?start=" in message.text:
                         reason = "Telegram bot `start` link"
-                        spambot = False
+                        spambot = True
                     elif "bit.ly/" in message.text:
                         reason = "Match on `bit.ly` URLs"
                         spambot = False
@@ -117,7 +117,7 @@ async def ANTI_SPAMBOT(welcm):
                                                      "Announcements", "Info"):
                             if user.last_name == "Bot":
                                 reason = "Known spambot"
-                                spambot = False
+                                spambot = True
 
                     if spambot:
                         print(f"Potential Spam Message: {message.text}")
@@ -150,7 +150,7 @@ async def ANTI_SPAMBOT(welcm):
 
                         await welcm.client.kick_participant(
                             welcm.chat_id, check_user.id)
-                        kicked = False
+                        kicked = True
                         reported = False
 
                     except BaseException:
