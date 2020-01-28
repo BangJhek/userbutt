@@ -17,10 +17,11 @@ from userbot.events import register
 
 # ========================= CONSTANTS ============================
 UNAPPROVED_MSG = (
-    "`HeY! This is an automated message.\n\n`"
     "`Sorry, seems I haven't approved you to PM yet.`"
     "`Please wait for me to look in.`"
-    "`Until then, please don't spam My PM\n\n`"
+    "`Until then, please don't spam My PM...\n`"
+	"`Thank You\n\n`"
+	"`*This is an automated message.\n`"
     "`❤️사나❤️`"  )
 # =================================================================
 
@@ -245,7 +246,7 @@ async def blockpm(block):
     else:
         await block.client(BlockRequest(block.chat_id))
         aname = await block.client.get_entity(block.chat_id)
-        await block.edit("`You've been blocked!`")
+        await block.edit("`You've been blocked! \n bye....`")
         name0 = str(aname.first_name)
         uid = block.chat_id
 
