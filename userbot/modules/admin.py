@@ -509,7 +509,7 @@ async def gspider(gspdr):
             '`Error! User probably already gmuted.\nRe-rolls the tape.`')
     else:
         if reason:
-            await gspdr.edit(f"`Globally taped!`Reason: {reason}")
+            await gspdr.edit(f"`Globally taped!`\nReason: {reason}")
         else:
             await gspdr.edit("`Globally taped!`")
 
