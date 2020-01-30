@@ -130,7 +130,7 @@ async def amireallyalive(alive):
                      " ---------------------------------------- \n"
                   f"User : {DEFAULTUSER}  \n"
                      " ---------------------------------------- \n"
-		              "`Join` [Support Group](https://t.me/userbotindo) \n\n"
+                     "`Join` [Support Group](https://t.me/userbotindo) \n\n"
                      "`감사합니다 💝 `\n"
                      "`Have a nice day `\n")
 
