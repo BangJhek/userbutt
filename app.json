@@ -1,7 +1,7 @@
 {
   "name": "Telegram UserButt",
-  "description": "[OpenUserBot] A modular Telegram userbot running on Python 3.7+ with an sqlalchemy database.",
-  "logo": "https://telegra.ph/file/a6a82522f448338526bf8.jpg",
+  "description": "[UserButt] A modular Telegram userbot running on Python 3.7+ with an sqlalchemy database.",
+  "logo": "https://i.ibb.co/1sPZd6M/EPpl-XY-UUAAzh-Gp.jpg",
   "keywords": [
     "telegram",
     "userbot",
@@ -33,7 +33,7 @@
     },
 	"TELEGRAPH_SHORT_NAME": {
       "description": "Set the userbot's telegra.ph module. You must set this to make the bot alive",
-      "value": "@*up to you",
+      "value": "*up to you",
       "required": true
 	},  
     "HEROKU_API_KEY": {
