@@ -85,6 +85,7 @@ async def set_group_photo(gpic):
         return
 
     if replymsg and replymsg.media:
+        await gpic.edit("`Changing Chat Picture`")
         if isinstance(replymsg.media, MessageMediaPhoto):
             photo = await gpic.client.download_media(message=replymsg.photo)
         elif "image" in replymsg.media.document.mime_type.split('/'):
@@ -140,6 +141,8 @@ async def promote(promt):
         await promt.client(
             EditAdminRequest(promt.chat_id, user.id, new_rights, rank))
         await promt.edit("`Promoted Successfully!`")
+        await sleep(5)
+        await promt.delete()
 
     # If Telethon spit BadRequestError, assume
     # we don't have Promote permission
@@ -195,6 +198,8 @@ async def demote(dmod):
         await dmod.edit(NO_PERM)
         return
     await dmod.edit("`Demoted Successfully!`")
+    await sleep(5)
+    await dmod.delete()
 
     # Announce to the logging group if we have demoted successfully
     if BOTLOG:
@@ -646,6 +651,8 @@ async def pin(msg):
         return
 
     await msg.edit("`Pinned Successfully!`")
+    await sleep(2)
+    await msg.delete()
 
     user = await get_user_from_id(msg.from_id, msg)
 
